@@ -698,6 +698,12 @@ a{
     border: 1px solid var(--modal-border);
     border-radius: 50%;
     cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus{
+    fill: var(--accent-color);
 }
 
 .modal-heading{
@@ -768,7 +774,15 @@ a{
 label.modal-politic-label {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-bottom: 0;
+}
+
+.modal .comment{
+    margin-bottom: 20px;
 }
 
 .conditions{
@@ -797,20 +811,13 @@ label.modal-politic-label {
 }
 
 .subscription{
-    margin-left: 93px;
-    flex-direction: row;
-}
-
-.form-subscription{
-    display: inline-flex;
-    align-items: baseline;
+    margin-left: auto;
 }
 
 .form-subscription-input{
     height: 50px;
     width: 358px;
     margin-right: 12px;
-    margin-top: 20px;
     padding-left: 16px;
     border-radius: 4px;
     border: 1px solid var(--border-subscribe);
@@ -824,7 +831,6 @@ label.modal-politic-label {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    margin-bottom: 40px;
 }
 
 .subscr-button{
@@ -834,12 +840,14 @@ label.modal-politic-label {
     align-items:center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 40px;
 }
 
 .subscr-send{
     height: 24px;
     width: 24px;
     margin-left: 10px;
+}
+
+.subscription > .title-social{
+    margin-bottom: 20px;
 }
